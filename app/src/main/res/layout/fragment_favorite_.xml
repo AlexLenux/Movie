@@ -1,0 +1,11 @@
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.movieapp.Favorite_ActivityFragment"
+    tools:showIn="@layout/activity_favorite_"
+    android:numColumns="auto_fit"
+    android:gravity="center">
+
+
+</GridView>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.movieapp.Search_ActivityFragment"
+    tools:showIn="@layout/activity_search_">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="enter movie name"
+        android:inputType="textShortMessage"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_search_24dp1"
+        android:id="@+id/button"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+     <GridView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/search_gridView"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:numColumns="auto_fit"
+         android:gravity="center"
+         android:layout_below="@+id/editText" />
+
+</RelativeLayout>

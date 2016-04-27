@@ -1,0 +1,127 @@
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment"
+    tools:showIn="@layout/activity_details"
+    android:scrollbars="vertical"
+    android:gravity="center"
+    android:id="@+id/details_fragment">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/title" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView_title"
+        android:textSize="30dp"
+        android:background="#1eccf3"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/title">
+  <TextView
+       android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView_vote_average"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textView_Date"
+        android:layout_toRightOf="@+id/share"
+        android:layout_toEndOf="@+id/share"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp" />
+    <ImageButton
+        android:layout_below="@+id/textView_vote_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:id="@+id/imageView"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/star"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_overview"
+        android:paddingBottom="10dp"/>
+
+
+    <TextView
+        android:text="trailer"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trailer"
+        android:layout_below="@+id/textview_overview"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        android:background="@drawable/ic_share_24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_alignBottom="@+id/trailer"
+        android:layout_toRightOf="@+id/trailer"
+        android:layout_toEndOf="@+id/trailer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/trailer"
+        android:id="@+id/linearLayout_trailer"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Reviews"
+        android:textSize="30dp"
+        android:layout_below="@+id/linearLayout_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviews"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout_reviews"
+        android:orientation="vertical"
+        android:layout_below="@+id/reviews"
+        android:gravity="center">
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

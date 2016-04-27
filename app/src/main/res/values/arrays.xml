@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_array">
+        <item>Top_Rate</item>
+        <item>Popular</item>
+        <item>Upcoming</item>
+        <item>Now_Playing</item>
+    </string-array>
+
+    <string-array name="sort_values">
+        <item>Top_Rate</item>
+        <item>Popular</item>
+        <item>Upcoming</item>
+        <item>Now_Playing</item>
+    </string-array>
+</resources>
